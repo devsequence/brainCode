@@ -170,6 +170,38 @@ button{
     }
   }
 }
+.btn-link{
+  color: #FFF;
+  border-radius: 2px;
+  background: #06335E;
+  text-align: center;
+  font-family: $GoldmanSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 150% */
+  padding: 13px 24px 11px;
+  border: 1px solid #06335E;
+  &:hover{
+    background: transparent;
+    color: #06335E;
+  }
+}
+.btn-more{
+  border-radius: 2px;
+  border: 1px solid #0D1826;
+  padding: 13px 24px 11px;
+  color: #0D1826;
+  font-family: $GoldmanSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  &:hover{
+    background: #0D1826;
+    color: $white;
+  }
+}
 .title-section{
   margin-bottom: 24px;
   text-align: center;
