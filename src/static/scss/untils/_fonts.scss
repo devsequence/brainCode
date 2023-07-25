@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('../fonts/Museo-Sans/MuseoSansCyrl-300.eot');
+  src: local('MuseoSansCyrl 300'), local('MuseoSansCyrl-300'),
+  url('../fonts/Museo-Sans/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Museo-Sans/MuseoSansCyrl-300.woff2') format('woff2'),
+  url('../fonts/Museo-Sans/MuseoSansCyrl-300.woff') format('woff'),
+  url('../fonts/Museo-Sans/MuseoSansCyrl-300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+$MuseoSans : 'Museo Sans';
+
+@font-face {
+  font-family: 'Sabon LTS td';
+  src: url('../fonts/Sabon-LT-Std/SabonLTStd-Bold.eot');
+  src: local('SabonLTStd Bold'), local('SabonLTStd-Bold'),
+  url('../fonts/Sabon-LT-Std/SabonLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Sabon-LT-Std/SabonLTStd-Bold.woff2') format('woff2'),
+  url('../fonts/Sabon-LT-Std/SabonLTStd-Bold.woff') format('woff'),
+  url('../fonts/Sabon-LT-Std/SabonLTStd-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+$SabonLTStd : 'Sabon LTS td';
+
+@font-face {
+  font-family: 'Goldman Sans';
+  src: url('../fonts/Goldman-Sans/Goldman-Sans-Bold.eot');
+  src: local('Goldman-Sans- Bold'), local('Goldman-Sans-Bold'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Bold.woff2') format('woff2'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Bold.woff') format('woff'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Goldman Sans';
+  src: url('../fonts/Goldman-Sans/Goldman-Sans-Italic.eot');
+  src: local('Goldman-Sans- Italic'), local('Goldman-Sans-Italic'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Italic.woff2') format('woff2'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Italic.woff') format('woff'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Goldman Sans';
+  src: url('../fonts/Goldman-Sans/Goldman-Sans-Light.eot');
+  src: local('Goldman-Sans- Light'), local('Goldman-Sans-Light'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Light.woff2') format('woff2'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Light.woff') format('woff'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Goldman Sans';
+  src: url('../fonts/Goldman-Sans/Goldman-Sans-Medium.eot');
+  src: local('Goldman-Sans- Medium'), local('Goldman-Sans-Medium'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium.woff2') format('woff2'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium.woff') format('woff'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Goldman Sans';
+  src: url('../fonts/Goldman-Sans/Goldman-Sans-Medium-Italic.eot');
+  src: local('Goldman-Sans-Medium Italic'), local('Goldman-Sans-Medium-Italic'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium-Italic.woff2') format('woff2'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium-Italic.woff') format('woff'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Medium-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Goldman Sans';
+  src: url('../fonts/Goldman-Sans/Goldman-Sans-Regular.eot');
+  src: local('Goldman-Sans- Medium Regular'), local('Goldman-Sans-Regular'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Regular.woff2') format('woff2'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Regular.woff') format('woff'),
+  url('../fonts/Goldman-Sans/Goldman-Sans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+$GoldmanSans : 'Goldman Sans';
+
+html,
+body {
+  font-family: $GoldmanSans;
+  font-weight: 400;
+  font-style: normal;
+}
