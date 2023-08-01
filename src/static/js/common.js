@@ -22,6 +22,12 @@ $(window).on('scroll', function() {
 if($('.hero').length > 0){}else{
     $('.header').addClass('page-nav');
 }
+$('.header-btn').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $('.header').toggleClass('active');
+    $('body').toggleClass('scroll');
+});
 // function topSlider() {
 //     var $topSliderLength = $('.top-banner__wrapper .swiper-slide').length;
 //     if($topSliderLength > 1){

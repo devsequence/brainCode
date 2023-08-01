@@ -100,13 +100,13 @@ gulp.task('dev:css', function () {
     return gulp.src('./src/static/scss/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(rename('style.css'))
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ overrideBrowserslist: ['last 2 versions'],
-            cascade: false}) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(sourcemaps.init())
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.init())
+        // .pipe(postcss([ autoprefixer({ overrideBrowserslist: ['last 2 versions'],
+        //     cascade: false}) ]))
+        // .pipe(sourcemaps.write('.'))
+        // .pipe(sourcemaps.init())
+        // .pipe(cleanCSS())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('./src/static/css'))
 
         .pipe(browserSync.stream())
