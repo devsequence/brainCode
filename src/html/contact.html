@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+</head>
+
+<body class="home">
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+    <div class="page-content">
+        <section class="form">
+            <div class="container">
+                <form action="#">
+                <div class="form-wrap">
+                    <div class="form-title">Contact us</div>
+                    <div class="form-inner">
+                        <div class="form-item">
+                            <div class="form-item__title">We're just a form away!  </div>
+                            <div class="form-item__text">Simply fill out our contact form, and we'll get in touch shortly.  </div>
+                            <div class="form-item__inputs">
+                                <form action="#">
+                                    <label class="label">
+                                        <span class="title-span">Your name</span>
+                                        <input type="text" class="input" placeholder="Chris" required>
+                                    </label>
+                                    <label class="label">
+                                        <span class="title-span">Email</span>
+                                        <input type="email" class="input" placeholder="chris.witney@corp.com" required>
+                                        <span class="subtitle-span">Provide company email address.</span>
+                                    </label>
+                                    <label class="label">
+                                        <span class="title-span">Project notes</span>
+                                        <textarea class="textarea" placeholder="Please provide more information regarding your project."></textarea>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item__title">We're just a form away!  </div>
+                            <div class="form-item__text">
+                                We're always here to provide the support and guidance you need.
+                                <br>
+                                <br>
+                                Don't let the opportunity slip away and leave traditional and inflexible development behind you!
+                            </div>
+                            <div class="form-item__links">
+                                <div class="form-item__links-item">
+                                    <span class="title-span">Our email</span>
+                                    <a href="mailto:hello@braincode.xyz" target="_blank">hello@braincode.xyz</a>
+                                </div>
+                                <div class="form-item__links-item">
+                                    <span class="title-span">Phone</span>
+                                    <a href="tel:+48535307770" target="_blank">+48 535 307 770</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <button type="submit" class="btn-submit">Send a request</button>
+                    </div>
+                </div>
+                <div class="form-submit hidden">
+                    <div class="form-title">Request was sent</div>
+                </div>
+                </form>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-map">
+                    <img src="../static/images/map-bg.jpg" alt="map">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info__title">Our headquorter </div>
+                    <div class="contact-info__text">As a remote-first company, our team members are spread across various locations. While our head office is located in a historic place, we have a diverse team spread across the United Kingdom, Poland, Ukraine and beyond. </div>
+                    <div class="contact-info__address">
+                        ul. Floriańska 6/2
+                        03-707, Warszawa, Poland
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+
+@@include('./includes/_scripts.html')
+
+</body>
+</html>
