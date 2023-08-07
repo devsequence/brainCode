@@ -1,7 +1,7 @@
 .header{
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 30;
   transition: all ease 300ms;
   width: 100%;
   &.before-scroll-nav{
@@ -103,17 +103,19 @@
     &:after{
       position: absolute;
       content: '';
-      right: 200px;
+      right: auto;
       top: 100%;
       transition: all ease 300ms;
       height: 100vh;
       width: calc(100% - 200px);
       z-index: -1;
+      left: -999999px;
     }
     &:before{
       position: absolute;
       content: '';
-      right: 0;
+      right: auto;
+      left: -999999px;
       top: 100%;
       height: 100vh;
       width: 200px;
@@ -126,11 +128,15 @@
     &.active{
       background: rgba($primary, .8);
       &:before{
+        right: 0;
+        left: auto;
         opacity: 1;
         visibility: visible;
         z-index: 2;
       }
       &:after{
+        right: 0;
+        left: auto;
         background: rgba($black, .8);
         z-index: 1;
       }

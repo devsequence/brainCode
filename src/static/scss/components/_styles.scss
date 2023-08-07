@@ -140,6 +140,40 @@ button{
     }
   }
 }
+.btn-blue{
+  color: $white;
+  font-family: $GoldmanSans;
+  background:  #186ADE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  border-radius: 2px;
+  border: 1px solid #186ADE;
+  padding: 8px 16px 8px 16px;
+  transition: all ease 300ms;
+  position: relative;
+  &:hover{
+    opacity: .8;
+  }
+}
+.btn-gray{
+  color: #1C2B36;
+  font-family: $GoldmanSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  border-radius: 2px;
+  border: 1px solid #DCE3E8;
+  padding: 6px 16px;
+  background: #DCE3E8;
+  transition: all ease 300ms;
+  position: relative;
+  &:hover{
+    opacity: .8;
+  }
+}
 .btn-submit{
   color: $white;
   font-family: $GoldmanSans;
@@ -275,6 +309,75 @@ button{
     }
   }
 }
+
+.modal-group{
+   text-align: left;
+   margin-bottom: 16px;
+   &.disabled{
+     .label-checkbox{
+       color: $gray;
+     }
+   }
+   .input-radio, .input-checkbox {
+     opacity: 0;
+     visibility: hidden;
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+     &:checked{
+        + label{
+          &:before{
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+        + label + label{
+          &:before{
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+     }
+   }
+   .label-checkbox{
+     display: block;
+     position: relative;
+     padding-left: 26px;
+     cursor: pointer;
+     font-size: 14px;
+     color: $default;
+     font-weight: 400;
+     &:before, &:after{
+       position: absolute;
+       content: '';
+       box-sizing: border-box;
+     }
+     &:after{
+       width: 14px;
+       height: 14px;
+       border: 1px solid #9FB1BD;
+       background: #FFF;
+       left: 2px;
+       top: 50%;
+       margin-top: -9px;
+
+     }
+     &:before{
+       width: 14px;
+       height: 14px;
+       transition: all ease 300ms;
+       left: 2px;
+       top: 50%;
+       margin-top: -9px;
+       opacity: 0;
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Crect width='14' height='14' fill='%23186ADE'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.52645 5.83993L2.47314 6.9079L5.64954 10.0407L11.5126 4.54777L10.487 3.45312L5.67624 7.96021L3.52645 5.83993Z' fill='white'/%3E%3C/svg%3E");
+     }
+   }
+ }
 
 //.wysiwyg{
 //  margin-bottom: 20px;

@@ -49,29 +49,35 @@
     <div class="page-content">
         <section class="form">
             <div class="container">
-                <form action="#">
-                <div class="form-wrap">
+                <form action="#" name="contact">
+                <div class="form-wrap form-wrap__contact">
                     <div class="form-title">Contact us</div>
                     <div class="form-inner">
                         <div class="form-item">
                             <div class="form-item__title">We're just a form away!  </div>
                             <div class="form-item__text">Simply fill out our contact form, and we'll get in touch shortly.  </div>
                             <div class="form-item__inputs">
-                                <form action="#">
-                                    <label class="label">
-                                        <span class="title-span">Your name</span>
-                                        <input type="text" class="input" placeholder="Chris" required>
-                                    </label>
-                                    <label class="label">
-                                        <span class="title-span">Email</span>
-                                        <input type="email" class="input" placeholder="chris.witney@corp.com" required>
-                                        <span class="subtitle-span">Provide company email address.</span>
-                                    </label>
-                                    <label class="label">
-                                        <span class="title-span">Project notes</span>
-                                        <textarea class="textarea" placeholder="Please provide more information regarding your project."></textarea>
-                                    </label>
-                                </form>
+                                <label class="label">
+                                    <span class="title-span">Your name</span>
+                                    <input type="text" name="ContactName" class="input" placeholder="Chris" required>
+                                </label>
+                                <label class="label">
+                                    <span class="title-span">Email</span>
+                                    <input type="email" class="input" placeholder="chris.witney@corp.com" required>
+                                    <span class="subtitle-span">Provide company email address.</span>
+                                </label>
+                                <label class="label">
+                                    <span class="title-span">Project notes</span>
+                                    <textarea class="textarea" placeholder="Please provide more information regarding your project."></textarea>
+                                </label>
+                                <div class="modal-group">
+                                    <input type="checkbox" class="input-checkbox" name="informed" id="informed" required>
+                                    <label for="informed" class="label-checkbox">I am informed about processing of my personal data and the right to withdraw my consent </label>
+                                </div>
+                                <div class="modal-group">
+                                    <input type="checkbox" class="input-checkbox" name="protected" id="protected" required>
+                                    <label for="protected" class="label-checkbox">My project is protected by NDA </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-item">
@@ -98,13 +104,24 @@
                         <button type="submit" class="btn-submit">Send a request</button>
                     </div>
                 </div>
-                <div class="form-submit hidden">
+                <div class="form-submit">
                     <div class="form-title">Request was sent</div>
+                    <div class="form-submit__inner">
+                        <div class="form-submit__title">Request was sent</div>
+                        <div class="form-submit__subtitle">What’s next?</div>
+                        <div class="form-submit__list">
+                            <ol>
+                                <li>We will back to you in 24 hours</li>
+                                <li>Together we will make a live scoping session</li>
+                                <li>You will receive free delivery roadmap with savings of Composable Mobile</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
                 </form>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact-page">
             <div class="container">
                 <div class="contact-map">
                     <img src="../static/images/map-bg.jpg" alt="map">
